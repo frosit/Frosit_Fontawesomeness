@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addLinkRel" ifconfig="fontawesomeness/settings/cdn">
+                <rel>stylesheet</rel>
+                <href>https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css</href>
+            </action>
+            <action method="addCss" ifconfig="fontawesomeness/settings/local">
+                <name>frosit/fontawesomeness/css/font-awesome.min.css</name>
+            </action>
+        </reference>
+    </default>
+</layout>

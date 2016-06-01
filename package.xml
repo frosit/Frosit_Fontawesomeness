@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Frosit_Fontawesomeness</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Adds Font Awesome using CDN or local file storage.</summary>
+    <description>This extension adds the Font Awesome icons in a quick and easy manner. It provides the possibility to add the font using CDN or from the local skin directory. It can be enabled using the settings in the system configuration panel. Currently it adds the latest 4.5 version. </description>
+    <notes>First stable version, just the necessary features. More to be added if requested.</notes>
+    <authors><author><name>Fabio Ros</name><user>frosit</user><email>fabioros.it@gmail.com</email></author></authors>
+    <date>2016-02-29</date>
+    <time>04:35:12</time>
+    <contents><target name="magecommunity"><dir name="Frosit"><dir name="Fontawesomeness"><dir name="Helper"><file name="Data.php" hash="bae8a986dc8086fe0d181ae685e8c911"/></dir><dir name="etc"><file name="adminhtml.xml" hash="aa6a09451a94ce3a51829751a0e0582b"/><file name="config.xml" hash="4fdf33b0d8c657e66c738eef6adf8876"/><file name="system.xml" hash="f59ff444754fff0fef1ae1f9de24e4c1"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="frosit_fontawesomeness.xml" hash="431cd561a6b8a5a87c0ddb07ef6ddb26"/></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="frosit"><dir name="fontawesomeness"><dir name="css"><file name="font-awesome.css" hash="5343ee1a287a65ff20961476fd8a6188"/><file name="font-awesome.min.css" hash="4fbd15cb6047af93373f4f895639c8bf"/></dir><dir name="fonts"><file name="FontAwesome.otf" hash="87d8ca3ddc57e7d2da6226e480f90457"/><file name="fontawesome-webfont.eot" hash="32400f4e08932a94d8bfd2422702c446"/><file name="fontawesome-webfont.svg" hash="f775f9cca88e21d45bebe185b27c0e5b"/><file name="fontawesome-webfont.ttf" hash="a3de2170e4e9df77161ea5d3f31b2668"/><file name="fontawesome-webfont.woff" hash="a35720c2fed2c7f043bc7e4ffb45e073"/><file name="fontawesome-webfont.woff2" hash="db812d8a70a4e88e888744c1c9a27e89"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Frosit_Fontawesomeness.xml" hash="0db179fe9c007c6e0744790522ae8b51"/></dir></target><target name="magelocale"><dir><dir name="en_US"><file name="Frosit_Fontawesomeness.csv" hash="93a3aa10bdecc1565b2dc39dc7b1a935"/></dir><dir name="nl_NL"><file name="Frosit_Fontawesomeness.csv" hash="2413c127260859df7d3edcbf57b3f232"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><package><name>Mage_Core_Adminhtml</name><channel>community</channel><min>1.7.0.0</min><max>1.9.2.3</max></package></required></dependencies>
+</package>

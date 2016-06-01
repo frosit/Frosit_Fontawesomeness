@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config>
+
+    <modules>
+        <Frosit_Fontawesomeness>
+            <version>1.0.0</version>
+        </Frosit_Fontawesomeness>
+    </modules>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <frosit_fontawesomeness>
+                    <files>
+                        <default>Frosit_Fontawesomeness.csv</default>
+                    </files>
+                </frosit_fontawesomeness>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <global>
+        <helpers>
+            <frosit_fontawesomeness>
+                <class>Frosit_Fontawesomeness_Helper</class>
+            </frosit_fontawesomeness>
+        </helpers>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <frosit_fontawesomeness>
+                    <file>frosit_fontawesomeness.xml</file>
+                </frosit_fontawesomeness>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <fontawesomeness>
+            <settings>
+                <cdn>0</cdn>
+                <local>0</local>
+            </settings>
+        </fontawesomeness>
+    </default>
+</config>
