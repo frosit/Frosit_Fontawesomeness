@@ -21,8 +21,8 @@ class Frosit_Fontawesomeness_Model_System_Config_Source_FontAwesome_Size extends
     public function toOptionArray()
     {
         return array(
-            array('value' => 'default', 'label' => 'default'),
-            array('value' => 'lg', 'label' => 'Large'),
+            array('value' => 'default', 'label' => Mage::helper('frosit_fontawesomeness')->__('default')),
+            array('value' => 'lg', 'label' => Mage::helper('frosit_fontawesomeness')->__('Large')),
             array('value' => '2x', 'label' => 'x2'),
             array('value' => '3x', 'label' => 'x3'),
             array('value' => '4x', 'label' => 'x4'),

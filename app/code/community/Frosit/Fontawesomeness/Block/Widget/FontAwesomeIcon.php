@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Frosit Fontawesomeness
  *
@@ -8,6 +7,10 @@
  * @author      Fabio Ros <info@frosit.nl>
  * @copyright   Copyright (c) 2016 Frosit
  * @license     http://opensource.org/licenses/osl-3.0.php Open Software License 3.0 (OSL-3.0)
+ */
+
+/**
+ * Class Frosit_Fontawesomeness_Block_Widget_FontAwesomeIcon
  */
 class Frosit_Fontawesomeness_Block_Widget_FontAwesomeIcon extends Mage_Core_Block_Template implements Mage_Widget_Block_Interface
 {
@@ -23,6 +26,9 @@ class Frosit_Fontawesomeness_Block_Widget_FontAwesomeIcon extends Mage_Core_Bloc
 
     }
 
+    /**
+     * @return string
+     */
     protected function _toHtml()
     {
         $sp = ' ';
@@ -44,7 +50,6 @@ class Frosit_Fontawesomeness_Block_Widget_FontAwesomeIcon extends Mage_Core_Bloc
         }
 
         $html .= '"></i>';
-
 
         return $html;
     }

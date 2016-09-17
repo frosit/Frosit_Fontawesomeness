@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Frosit Fontawesomeness
  *
@@ -9,29 +8,49 @@
  * @copyright   Copyright (c) 2016 Frosit
  * @license     http://opensource.org/licenses/osl-3.0.php Open Software License 3.0 (OSL-3.0)
  */
+
+/**
+ * Class Frosit_Fontawesomeness_Block_Fontawesome
+ */
 class Frosit_Fontawesomeness_Block_Fontawesome extends Mage_Core_Block_Template
 {
 
+    /**
+     * Prepares styles
+     * @return $this
+     */
     protected function _prepareLayout()
     {
         parent::_prepareLayout();
 
-        $helper = $this->helper('frosit_fontawesomeness');
-
-        if ($this->helper('frosit_fontawesomeness')->getFontAwesomeSettings('active')) {
+        $helper = $this->helper('frosit_fontawesomeness/fonts');
+        if ($helper->getFontAwesomeSettings('active')) {
 
             $headBlock = $this->getLayout()->getBlock('head');
-            $method = $this->helper('frosit_fontawesomeness')->getFontAwesomeSettings('method');
+            $config = $helper->getFontAwesomeSettings();
+            $method = $config['method'];
 
             if ($method === 'cdn') {
-                $url = str_replace('{{version}}',$helper->getFontAwesomeSettings('version') ? $helper->getFontAwesomeSettings('version') : 'x',$helper->getFontAwesomeCdn());
+                $url = str_replace('{{version}}', $config['version'] ? $config['version'] : $this->getLatest(), $helper->getFontAwesome('cdn'));
                 $headBlock->addLinkRel('stylesheet', $url);
             } elseif ($method === 'local') {
-                $headBlock->addCss($helper->getFontAwesomeLocal());
+                $headBlock->addCss($helper->getFontAwesome('local'));
             } else {
-                Mage::log('method ' . $method . ' undefined');
+                Mage::log('font awesome loading method ' . $method . ' is undefined undefined');
             }
         }
         return $this;
+    }
+
+    /**
+     * Get Latest version
+     * @return mixed
+     * @todo test & validate
+     */
+    protected function getLatest()
+    {
+        $model = Mage::getModel('frosit_fontawesomeness/system_config_source_fontAwesome_version');
+        $options = $model->toOptionArray();
+        return $options[0]['value'];
     }
 }
