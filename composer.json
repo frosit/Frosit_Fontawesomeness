@@ -16,6 +16,10 @@
     "magento-hackathon/magento-composer-installer": "*",
     "php" : "^5.3 || ^7.0",
   },
+  "require-dev": {
+    "phpunit/phpunit": ">=4.8 <5.0.0",
+    "n98/magerun": "1.97.*"
+  },
   "repositories": [
     {
       "type": "git",

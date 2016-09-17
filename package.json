@@ -1,0 +1,42 @@
+{
+  "name": "frosit-fontawesomeness",
+  "version": "1.1.0",
+  "description": "Adds icon fonts to your Magento Store.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frosit/Frosit_Fontawesomeness.git"
+  },
+  "keywords": [
+    "Magento",
+    "iconic",
+    "font"
+  ],
+  "author": "Fabio Ros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frosit/Frosit_Fontawesomeness/issues"
+  },
+  "homepage": "https://github.com/frosit/Frosit_Fontawesomeness#readme",
+  "dependencies": {
+    "autoprefixer": "^6.4.1",
+    "del": "^2.2.2",
+    "fs-extra": "^0.30.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-config": "^0.3.0",
+    "gulp-if": "^2.0.1",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "path": "^0.12.7",
+    "reversible": "^0.1.0",
+    "run-sequence": "^1.2.2",
+    "sprity": "^1.0.8",
+    "sprity-sass": "^1.0.4"
+  }
+}

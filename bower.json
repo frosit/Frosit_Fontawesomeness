@@ -1,0 +1,32 @@
+{
+  "name": "font-awesomeness",
+  "homepage": "https://github.com/frosit/Frosit_Fontawesomeness",
+  "authors": [
+    "frosit <fabioros.it@gmail.com>"
+  ],
+  "description": "adds icon fonts to your Magento store",
+  "main": "",
+  "keywords": [
+    "iconic",
+    "icons",
+    "font",
+    "awesome"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "themify-icons": "^0.1.2",
+    "foundation-icon-fonts": "*",
+    "Ionicons": "ionicons#^2.0.1",
+    "octicons": "^4.3.0",
+    "open-iconic": "^1.1.1",
+    "font-awesome": "^4.6.3"
+  }
+}
