@@ -43,8 +43,17 @@ class Frosit_Fontawesomeness_Helper_Fonts extends Frosit_Fontawesomeness_Helper_
     }
 
     /**
+     * Get local fontset settings
+     * @return bool|mixed
+     */
+    public function getCustomFonts()
+    {
+
+        return $this->getCustomFontSettings('active') && $this->getCustomFontSettings('links') ? $this->getCustomFontSettings() : false;
+    }
+
+    /**
      * Swaps the CSS file for the minified version
-     * @todo add option to font awesome set
      * @param $cssString
      * @return mixed
      */

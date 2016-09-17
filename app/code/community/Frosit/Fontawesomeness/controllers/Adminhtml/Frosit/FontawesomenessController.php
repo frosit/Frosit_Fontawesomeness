@@ -13,7 +13,13 @@ class Frosit_Fontawesomeness_Adminhtml_Frosit_FontawesomenessController extends 
 
     public function IndexAction(){
         $this->loadLayout();
-        echo "works";
+
+        $block = $this->getLayout()->createBlock('core/template');
+        $block->setTemplate('frosit/fontawesomeness/base.phtml');
+
+        // Render the template to the browser
+        $this->_addContent($block);
+
         $this->renderLayout();
     }
 

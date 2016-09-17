@@ -21,7 +21,7 @@ class Frosit_Fontawesomeness_Model_System_Config_Source_FontAwesome_FlipRotate e
     public function toOptionArray()
     {
         return array(
-            array('value' => 'none', 'label' => 'none'),
+            array('value' => 'none', 'label' => Mage::helper('frosit_fontawesomeness')->__('None')),
             array('value' => 'rotate-90', 'label' => 'rotate 90 degrees'),
             array('value' => 'rotate-180', 'label' => 'rotate 180 degrees'),
             array('value' => 'rotate-270', 'label' => 'rotate 270 degrees'),

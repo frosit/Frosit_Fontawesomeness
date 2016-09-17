@@ -16,8 +16,8 @@
 class Frosit_Fontawesomeness_Helper_Data extends Mage_Core_Helper_Abstract
 {
 
-    const FONTAWESOMECDN = "https://maxcdn.bootstrapcdn.com/font-awesome/{{version}}/css/font-awesome.min.css";
-    const FONTAWESOMELOCAL = "frosit/fontawesomeness/fontsets/font-awesome/css/font-awesome.min.css";
+    const FONTAWESOMECDN = "https://maxcdn.bootstrapcdn.com/font-awesome/{{version}}/css/font-awesome.css";
+    const FONTAWESOMELOCAL = "frosit/fontawesomeness/fontsets/font-awesome/css/font-awesome.css";
 
     /**
      * @param bool $field

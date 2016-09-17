@@ -18,13 +18,13 @@
             <show_in_store>1</show_in_store>
 
             <groups>
-                <logo>
-                    <frontend_model>frosit_fontawesomeness/adminhtml_system_config_fieldset_logo</frontend_model>
-                    <sort_order>0</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                </logo>
+                <!--<logo>-->
+                    <!--<frontend_model>frosit_fontawesomeness/adminhtml_system_config_fieldset_logo</frontend_model>-->
+                    <!--<sort_order>0</sort_order>-->
+                    <!--<show_in_default>1</show_in_default>-->
+                    <!--<show_in_website>1</show_in_website>-->
+                    <!--<show_in_store>1</show_in_store>-->
+                <!--</logo>-->
 
                 <info>
                     <frontend_model>frosit_fontawesomeness/adminhtml_system_config_fieldset_info</frontend_model>
@@ -74,8 +74,7 @@
                             <show_in_store>1</show_in_store>
                         </version>
                         <minified>
-                            <label translate="label, comment">Minified</label>
-                            <comment>Uses the minified CSS.</comment>
+                            <label translate="label">Minified</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>40</sort_order>
@@ -88,9 +87,9 @@
                         </minified>
                     </fields>
                 </font_awesome>
-                <local_fonts>
-                    <label>CSS Merge-able Icon font sets.</label>
-                    <comment>The following iconic font sets are included within font awesomeness and their CSS can be merged.</comment>
+                <local_fonts translate="label, comment">
+                    <label>Locally included Font sets</label>
+                    <comment>The following iconic font sets are included within font awesomeness and their CSS can be merged</comment>
                     <sort_order>30</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
@@ -117,11 +116,10 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </fontsets>
-                        <minified translate="label, comment">
+                        <minified translate="label">
                             <label>Minified</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
-                            <comment>Uses the minified CSS.</comment>
                             <sort_order>30</sort_order>
                             <depends>
                                 <active>1</active>
@@ -132,39 +130,15 @@
                         </minified>
                     </fields>
                 </local_fonts>
-                <!--<cdn>
-                    <label>CDN (beta)</label>
-                    <comment>Find iconic font sets in CDNJS</comment>
-                    <sort_order>40</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                    <fields>
-                        <active>
-                            <label>Enable</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>adminhtml/system_config_source_yesno</source_model>
-                            <sort_order>10</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </active>
-                        <font_sets>
-                            <label>Find sets</label>
-                            <frontend_type>cdnjs</frontend_type>
-
-                        </font_sets>
-                    </fields>
-                </cdn>-->
-                <!--<custom>
-                    <label>Custom</label>
-                    <comment>Append Custom font sets by specifying links to their respective CSS</comment>
+                <custom>
+                    <label translate="label, comment">Custom fontsets</label>
+                    <comment>Add links to additional font sets</comment>
                     <sort_order>50</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <active>
+                        <active translate="label">
                             <label>Enable</label>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
@@ -174,16 +148,19 @@
                             <show_in_store>1</show_in_store>
                         </active>
                         <links>
-                            <label>Links</label>
-                            <comment>comma seperate strings</comment>
+                            <label translate="label, comment">Links</label>
+                            <comment>Multiple links go comma separated</comment>
                             <frontend_type>textarea</frontend_type>
+                            <depends>
+                                <active>1</active>
+                            </depends>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </links>
                     </fields>
-                </custom>-->
+                </custom>
             </groups>
         </fontawesomeness>
     </sections>

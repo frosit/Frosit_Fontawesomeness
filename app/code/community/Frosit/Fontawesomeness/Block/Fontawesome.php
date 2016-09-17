@@ -25,16 +25,22 @@ class Frosit_Fontawesomeness_Block_Fontawesome extends Mage_Core_Block_Template
 
         $helper = $this->helper('frosit_fontawesomeness/fonts');
         if ($helper->getFontAwesomeSettings('active')) {
-
             $headBlock = $this->getLayout()->getBlock('head');
             $config = $helper->getFontAwesomeSettings();
             $method = $config['method'];
 
             if ($method === 'cdn') {
                 $url = str_replace('{{version}}', $config['version'] ? $config['version'] : $this->getLatest(), $helper->getFontAwesome('cdn'));
+                if ($config['minified']) {
+                    str_replace(".css", ".min.css", $url);
+                }
                 $headBlock->addLinkRel('stylesheet', $url);
             } elseif ($method === 'local') {
-                $headBlock->addCss($helper->getFontAwesome('local'));
+                $url = $helper->getFontAwesome('local');
+                if ($config['minified']) {
+                    str_replace(".css", ".min.css", $url);
+                }
+                $headBlock->addCss($url);
             } else {
                 Mage::log('font awesome loading method ' . $method . ' is undefined undefined');
             }

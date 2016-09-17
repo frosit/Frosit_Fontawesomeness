@@ -2,8 +2,9 @@
 <layout version="0.1.0">
     <default>
         <reference name="head">
-            <block type="frosit_fontawesomeness/fontawesome" name="frosit_font_awesome"/>
-            <block type="frosit_fontawesomeness/localfonts" name="frosit_font_awesome"/>
+            <block type="frosit_fontawesomeness/fontawesome" name="frosit_font_awesome_font"/>
+            <block type="frosit_fontawesomeness/localfonts" name="frosit_font_awesome_local"/>
+            <block type="frosit_fontawesomeness/customfonts" name="frosit_font_awesome_custom"/>
         </reference>
     </default>
 </layout>
