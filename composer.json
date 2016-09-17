@@ -1,0 +1,25 @@
+{
+  "name": "frosit/fontawesomeness",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "description": "Font Awesomeness adds icon fonts to Magento.",
+  "homepage": "https://github.com/frosit/Frosit_Fontawesomeness",
+  "authors": [
+    {
+      "name": "Fabio Ros",
+      "email": "f.ros@frosit.nl",
+      "homepage": "http://www.frosit.nl",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*",
+    "php" : "^5.3 || ^7.0",
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/frosit/Frosit_Fontawesomeness"
+    }
+  ]
+}
