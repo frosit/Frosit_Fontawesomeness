@@ -3,9 +3,28 @@
 
     <modules>
         <Frosit_Fontawesomeness>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </Frosit_Fontawesomeness>
     </modules>
+
+
+    <global>
+        <blocks>
+            <frosit_fontawesomeness>
+                <class>Frosit_Fontawesomeness_Block</class>
+            </frosit_fontawesomeness>
+        </blocks>
+        <helpers>
+            <frosit_fontawesomeness>
+                <class>Frosit_Fontawesomeness_Helper</class>
+            </frosit_fontawesomeness>
+        </helpers>
+        <models>
+            <frosit_fontawesomeness>
+                <class>Frosit_Fontawesomeness_Model</class>
+            </frosit_fontawesomeness>
+        </models>
+    </global>
 
     <adminhtml>
         <translate>
@@ -18,14 +37,6 @@
             </modules>
         </translate>
     </adminhtml>
-
-    <global>
-        <helpers>
-            <frosit_fontawesomeness>
-                <class>Frosit_Fontawesomeness_Helper</class>
-            </frosit_fontawesomeness>
-        </helpers>
-    </global>
 
     <frontend>
         <layout>
@@ -40,8 +51,9 @@
     <default>
         <fontawesomeness>
             <settings>
-                <cdn>0</cdn>
-                <local>0</local>
+                <font_awesome>
+                    <active>0</active>
+                </font_awesome>
             </settings>
         </fontawesomeness>
     </default>

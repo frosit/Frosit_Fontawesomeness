@@ -1,4 +1,5 @@
 app/code/community/Frosit/Fontawesomeness/ app/code/community/Frosit/Fontawesomeness/
+app/design/frontend/base/default/layout/frosit_fontawesomeness.xml app/design/frontend/base/default/layout/frosit_fontawesomeness.xml
 app/etc/modules/Frosit_Fontawesomeness.xml app/etc/modules/Frosit_Fontawesomeness.xml
 app/locale/en_US/Frosit_Fontawesomeness.csv app/locale/en_US/Frosit_Fontawesomeness.csv
 app/locale/nl_NL/Frosit_Fontawesomeness.csv app/locale/nl_NL/Frosit_Fontawesomeness.csv
