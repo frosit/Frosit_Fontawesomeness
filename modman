@@ -1,6 +1,9 @@
 app/code/community/Frosit/Fontawesomeness/ app/code/community/Frosit/Fontawesomeness/
+app/design/adminhtml/default/default/layout/frosit_fontawesomeness.xml app/design/adminhtml/default/default/layout/frosit_fontawesomeness.xml
+app/design/adminhtml/default/default/template/frosit/fontawesomeness/ app/design/adminhtml/default/default/template/frosit/fontawesomeness/
 app/design/frontend/base/default/layout/frosit_fontawesomeness.xml app/design/frontend/base/default/layout/frosit_fontawesomeness.xml
 app/etc/modules/Frosit_Fontawesomeness.xml app/etc/modules/Frosit_Fontawesomeness.xml
 app/locale/en_US/Frosit_Fontawesomeness.csv app/locale/en_US/Frosit_Fontawesomeness.csv
 app/locale/nl_NL/Frosit_Fontawesomeness.csv app/locale/nl_NL/Frosit_Fontawesomeness.csv
+skin/adminhtml/default/default/frosit/fontawesomeness/ skin/adminhtml/default/default/frosit/fontawesomeness/
 skin/frontend/base/default/frosit/fontawesomeness/ skin/frontend/base/default/frosit/fontawesomeness/

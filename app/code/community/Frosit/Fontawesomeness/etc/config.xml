@@ -26,6 +26,18 @@
         </models>
     </global>
 
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Frosit_Fontawesomeness after="Mage_Adminhtml">Frosit_Fontawesomeness_Adminhtml</Frosit_Fontawesomeness>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
     <adminhtml>
         <translate>
             <modules>
@@ -36,6 +48,13 @@
                 </frosit_fontawesomeness>
             </modules>
         </translate>
+        <layout>
+            <updates>
+                <frosit_fontawesomeness>
+                    <file>frosit_fontawesomeness.xml</file>
+                </frosit_fontawesomeness>
+            </updates>
+        </layout>
     </adminhtml>
 
     <frontend>
