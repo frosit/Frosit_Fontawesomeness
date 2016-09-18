@@ -149,7 +149,7 @@
                         </active>
                         <links>
                             <label translate="label, comment">Links</label>
-                            <comment>Multiple links go comma separated</comment>
+                            <comment>Comma separated for multiple classes</comment>
                             <frontend_type>textarea</frontend_type>
                             <depends>
                                 <active>1</active>

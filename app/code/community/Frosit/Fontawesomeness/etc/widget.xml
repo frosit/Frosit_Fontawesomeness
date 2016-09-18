@@ -36,7 +36,7 @@
             </flip_rotate>
             <custom translate="label">
                 <label>Custom classes</label>
-                <description>Comma seperated for multipleple classes</description>
+                <description>Comma separated for multiple classes</description>
                 <type>textarea</type>
                 <visible>1</visible>
             </custom>
