@@ -17,7 +17,7 @@ class Frosit_Fontawesomeness_Test_Config_Main extends EcomDev_PHPUnit_Test_Case_
      */
     public function testCodePool()
     {
-        $this->assertModuleCodePool('community');
+        static::assertModuleCodePool('community');
     }
 
     /**
@@ -26,7 +26,7 @@ class Frosit_Fontawesomeness_Test_Config_Main extends EcomDev_PHPUnit_Test_Case_
      */
     public function testModuleVersion()
     {
-        $this->assertModuleVersionGreaterThan('1.0.0');
+        static::assertModuleVersionGreaterThan('1.0.0');
     }
 
     /**
@@ -35,16 +35,16 @@ class Frosit_Fontawesomeness_Test_Config_Main extends EcomDev_PHPUnit_Test_Case_
      */
     public function testClassAliases()
     {
-        $this->assertHelperAlias(
+        static::assertHelperAlias(
             'frosit_fontawesomeness',
             'Frosit_Fontawesomeness_Helper_Data'
         );
-        $this->assertHelperAlias(
+        static::assertHelperAlias(
             'frosit_fontawesomeness/fonts',
             'Frosit_Fontawesomeness_Helper_Fonts'
         );
 
-        $this->assertModelAlias(
+        static::assertModelAlias(
             'frosit_fontawesomeness/system_config_source_fontsets_localSources',
             'Frosit_Fontawesomeness_Model_System_Config_Source_Fontsets_LocalSources'
         );
@@ -56,7 +56,7 @@ class Frosit_Fontawesomeness_Test_Config_Main extends EcomDev_PHPUnit_Test_Case_
      */
     public function testConfigContainsXmlLocationNode()
     {
-        $this->assertConfigNodeHasChild(
+        static::assertConfigNodeHasChild(
             'frontend/layout/updates',
             'frosit_fontawesomeness'
         );
