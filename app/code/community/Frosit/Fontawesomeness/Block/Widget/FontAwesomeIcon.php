@@ -18,15 +18,6 @@ class Frosit_Fontawesomeness_Block_Widget_FontAwesomeIcon extends Mage_Core_Bloc
     protected $_config;
 
     /**
-     * Constructor
-     */
-    protected function _construct()
-    {
-        parent::_construct();
-
-    }
-
-    /**
      * @return string
      */
     protected function _toHtml()
