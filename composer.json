@@ -12,15 +12,63 @@
       "role": "Developer"
     }
   ],
+  "support": {
+    "issues": "https://github.com/frosit/frosit_fontawesomeness/issues"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.firegento.com"
+    }
+  ],
   "require": {
-    "magento-hackathon/magento-composer-installer": "*",
-    "php": "^5.3 || ^7.0"
+    "php": "^5.3 || ^7.0",
+    "composer/composer": "^1.3.0"
   },
   "require-dev": {
+    "magento-hackathon/magento-composer-installer": "*",
     "phpunit/phpunit": ">=4.8 <5.0.0",
-    "n98/magerun": "1.97.*"
+    "n98/magerun": "1.97.*",
+    "squizlabs/php_codesniffer": "2.*",
+    "magento-ecg/coding-standard":"2.*"
   },
   "extra": {
-    "magento-root-dir": "../../"
+    "magento-root-dir": "test/",
+    "magento_connect":{
+      "name":"Frosit_Fontawesomeness",
+      "summary":"Fontawesomeness enables various iconic fonts and a font widget within your Magento store.",
+      "channel": "community",
+      "php_min": "5.2.0",
+      "php_max": "7.1.0",
+      "stability": "stable",
+      "license_uri": "http://www.gnu.org/licenses/gpl-3.0.html",
+      "content":[
+        {
+          "type":"magecommunity",
+          "structure":"dir",
+          "path":"Frosit/Fontawesomeness",
+        },
+        {
+          "type": "mageetc",
+          "structure": "file",
+          "path": "modules/Frosit_Fontawesomeness.xml"
+        },
+        {
+          "type": "magelocale",
+          "structure": "dir",
+          "path": "nl_NL/Frosit_Fontawesomeness.csv"
+        },
+        {
+          "type": "magelocale",
+          "structure": "file",
+          "path": "en_US/Frosit_Fontawesomeness.csv"
+        },
+        {
+          "type": "mageskin",
+          "structure": "dir",
+          "path": "frontend/base/default/frosit/fontawesomeness"
+        }
+      ]
+    }
   }
 }
