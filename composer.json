@@ -25,10 +25,7 @@
     "phpunit/phpunit": ">=4.8 <5.0.0",
     "n98/magerun": "1.97.*",
     "squizlabs/php_codesniffer": "2.*",
-    "magento-ecg/coding-standard":"2.*"
-  },
-  "config": {
-    "bin-dir": "bin"
+    "magento-ecg/coding-standard": "2.*"
   },
   "extra": {
     "magento-root-dir": "../../",
