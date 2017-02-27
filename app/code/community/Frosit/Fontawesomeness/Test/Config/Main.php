@@ -1,13 +1,5 @@
 <?php
-/**
- * Frosit URLRewriteToolset
- *
- * @category    magerun-addon
- * @package     URLRewriteToolset
- * @author      Fabio Ros <f.ros@fros.it>
- * @copyright   Copyright (c) 2016 Fabio Ros - FROSIT
- * @license http://opensource.org/licenses/gpl-license.php GNU Public License
- */
+
 
 class Frosit_Fontawesomeness_Test_Config_Main extends EcomDev_PHPUnit_Test_Case_Config
 {

@@ -1,6 +1,12 @@
 language: php
 sudo: false
 
+branches:
+  only:
+    - travis
+    - master
+    - staging
+
 php:
   - 5.4
   - 5.5
@@ -50,13 +56,13 @@ matrix:
     - php: 5.6
   include:
     - php: 7.0
-      env: MAGENTO_VERSION="magento-mirror-1.9.2.1" DB=mysql INSTALL_SAMPLE_DATA=no
+      env: MAGENTO_VERSION="magento-mirror-1.9.2.1"
     - php: 7.0
-      env: MAGENTO_VERSION="magento-mirror-1.9.2.4" DB=mysql INSTALL_SAMPLE_DATA=no
+      env: MAGENTO_VERSION="magento-mirror-1.9.2.4"
     - php: 7.0
-      env: MAGENTO_VERSION="magento-mirror-1.9.3.0" DB=mysql INSTALL_SAMPLE_DATA=no
+      env: MAGENTO_VERSION="magento-mirror-1.9.3.0"
     - php: 7.0
-      env: MAGENTO_VERSION="magento-mirror-1.9.3.1" DB=mysql INSTALL_SAMPLE_DATA=no
+      env: MAGENTO_VERSION="magento-mirror-1.9.3.1"
     - php: 7.0
       env: LINTSH=1
       script: find {src,tests} -name "*.php" ! -path '*/String.php' -print0 | xargs -0 -n1 -P8 php -l | grep -v '^No syntax errors detected'; test $? -eq 1
