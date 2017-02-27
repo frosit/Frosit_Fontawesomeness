@@ -13,12 +13,14 @@
     }
   ],
   "require": {
-    "magento-hackathon/magento-composer-installer": "*",
     "php": "^5.3 || ^7.0"
   },
   "require-dev": {
+    "magento-hackathon/magento-composer-installer": "*",
     "phpunit/phpunit": ">=4.8 <5.0.0",
-    "n98/magerun": "1.97.*"
+    "n98/magerun": "1.97.*",
+    "squizlabs/php_codesniffer": "2.*",
+    "magento-ecg/coding-standard":"2.*"
   },
   "extra": {
     "magento-root-dir": "../../"

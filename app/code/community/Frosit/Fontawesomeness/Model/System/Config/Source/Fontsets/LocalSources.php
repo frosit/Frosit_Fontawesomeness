@@ -24,6 +24,7 @@ class Frosit_Fontawesomeness_Model_System_Config_Source_Fontsets_LocalSources ex
         return array(
             array('value' => 'font-awesome/css/font-awesome.css', 'label' => 'Font Awesome'),
             array('value' => 'foundation-icons/foundation-icons.css', 'label' => 'Foundation Icons'),
+            array('value' => 'material-design/material-icons.css', 'label' => 'Material Design Icons'),
             array('value' => 'ionicons/css/ionicons.css', 'label' => 'IonIcons'),
             array('value' => 'octicons/octicons.css', 'label' => 'OctIcons'),
             array('value' => 'open-iconic/css/open-iconic.css', 'label' => 'Open Iconic'),

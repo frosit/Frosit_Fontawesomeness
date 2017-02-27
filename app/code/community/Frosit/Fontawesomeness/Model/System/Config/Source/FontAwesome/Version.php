@@ -21,6 +21,7 @@ class Frosit_Fontawesomeness_Model_System_Config_Source_FontAwesome_Version exte
     public function toOptionArray()
     {
         return array(
+            array('value' => '4.7.0', 'label' => '4.7.0'),
             array('value' => '4.6.3', 'label' => '4.6.3'),
             array('value' => '4.6.2', 'label' => '4.6.2'),
             array('value' => '4.6.1', 'label' => '4.6.1'),
