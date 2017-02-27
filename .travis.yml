@@ -4,6 +4,7 @@ sudo: false
 branches:
   only:
     - travis
+    - travis-cs
     - master
     - staging
 
