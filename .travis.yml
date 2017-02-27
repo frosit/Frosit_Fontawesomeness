@@ -10,6 +10,7 @@ php:
 env:
   global:
   - SKIP_CLEANUP=1
+  matrix:
   - MAGENTO_VERSION=magento-mirror-1.4.2.0
   - MAGENTO_VERSION=magento-mirror-1.5.1.0
   - MAGENTO_VERSION=magento-mirror-1.6.2.0
@@ -59,7 +60,6 @@ matrix:
     - php: 7.0
       env: LINTSH=1
       script: find {src,tests} -name "*.php" ! -path '*/String.php' -print0 | xargs -0 -n1 -P8 php -l | grep -v '^No syntax errors detected'; test $? -eq 1
-
 
 script:
   - curl -sSL https://raw.githubusercontent.com/frosit/MageTestStand/master/setup.sh | bash
