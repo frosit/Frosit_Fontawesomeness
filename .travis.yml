@@ -16,23 +16,23 @@ php:
 
 env:
   global:
-  - SKIP_CLEANUP=1
+    - SKIP_CLEANUP=1
   matrix:
-  - MAGENTO_VERSION=magento-mirror-1.4.2.0
-  - MAGENTO_VERSION=magento-mirror-1.5.1.0
-  - MAGENTO_VERSION=magento-mirror-1.6.2.0
-  - MAGENTO_VERSION=magento-mirror-1.7.0.2
-  - MAGENTO_VERSION=magento-mirror-1.8.1.0
-  - MAGENTO_VERSION=magento-mirror-1.9.2.1
-  - MAGENTO_VERSION=magento-mirror-1.9.2.4
-  - MAGENTO_VERSION=magento-mirror-1.9.3.0
-  - MAGENTO_VERSION=magento-mirror-1.9.3.1
+    - MAGENTO_VERSION=magento-mirror-1.4.2.0
+    - MAGENTO_VERSION=magento-mirror-1.5.1.0
+    - MAGENTO_VERSION=magento-mirror-1.6.2.0
+    - MAGENTO_VERSION=magento-mirror-1.7.0.2
+    - MAGENTO_VERSION=magento-mirror-1.8.1.0
+    - MAGENTO_VERSION=magento-mirror-1.9.2.1
+    - MAGENTO_VERSION=magento-mirror-1.9.2.4
+    - MAGENTO_VERSION=magento-mirror-1.9.3.0
+    - MAGENTO_VERSION=magento-mirror-1.9.3.1
 
 matrix:
   fast-finish: true
   allow_failures:
-  - php: hhvm
-  - php: 5.6
+    - php: hhvm
+    - php: 5.6
   exclude:
     - php: 7.0
       env: MAGENTO_VERSION="magento-mirror-1.4.2.0"
@@ -56,8 +56,8 @@ matrix:
       env: MAGENTO_VERSION="magento-mirror-1.8.1.0"
     - php: 5.6
   include:
-    - php: 5.5
-      script: ./vendor/bin/phpcs --standard="./vendor/magento-ecg/coding-standard/Ecg" app
+#    - php: 5.5
+#      script: ./vendor/bin/phpcs --standard="./vendor/magento-ecg/coding-standard/Ecg" app
     - php: 7.0
       env: MAGENTO_VERSION="magento-mirror-1.9.2.1"
     - php: 7.0
@@ -70,9 +70,9 @@ matrix:
       env: LINTSH=1
       script: find {src,tests} -name "*.php" ! -path '*/String.php' -print0 | xargs -0 -n1 -P8 php -l | grep -v '^No syntax errors detected'; test $? -eq 1
 
-before_install:
-  - phpenv config-rm xdebug.ini
-  - travis_retry composer self-update
+#before_install:
+#  - phpenv config-rm xdebug.ini
+#  - travis_retry composer self-update
   - travis_retry composer global require hirak/prestissimo
 
 install:
