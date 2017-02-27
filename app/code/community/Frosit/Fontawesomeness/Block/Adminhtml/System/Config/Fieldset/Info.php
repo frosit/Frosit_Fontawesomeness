@@ -31,4 +31,3 @@ class Frosit_Fontawesomeness_Block_Adminhtml_System_Config_Fieldset_Info extends
         return $this->toHtml();
     }
 }
-

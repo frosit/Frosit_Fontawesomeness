@@ -1,6 +1,8 @@
 Frosit_Fontawesomeness
 ======================
 
+[![Build Status](https://travis-ci.org/frosit/Frosit_Fontawesomeness.svg?branch=master)](https://travis-ci.org/frosit/Frosit_Fontawesomeness)
+
 Font Awesomeness adds iconic fonts to a Magento store in a convenient way.
 
 # Features

@@ -18,13 +18,13 @@
             <show_in_store>1</show_in_store>
 
             <groups>
-                <!--<logo>-->
-                    <!--<frontend_model>frosit_fontawesomeness/adminhtml_system_config_fieldset_logo</frontend_model>-->
-                    <!--<sort_order>0</sort_order>-->
-                    <!--<show_in_default>1</show_in_default>-->
-                    <!--<show_in_website>1</show_in_website>-->
-                    <!--<show_in_store>1</show_in_store>-->
-                <!--</logo>-->
+                <logo>
+                    <frontend_model>frosit_fontawesomeness/adminhtml_system_config_fieldset_logo</frontend_model>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </logo>
 
                 <info>
                     <frontend_model>frosit_fontawesomeness/adminhtml_system_config_fieldset_info</frontend_model>

@@ -33,7 +33,7 @@ var bowerDir = "bower_components";
 gulp.task('default', function () {
     runSequence(
         'wipe',
-        ['font-awesome','foundation', 'ionicons', 'octicons', 'open-iconic', 'themify-icons']
+        ['font-awesome', 'foundation', 'ionicons', 'octicons', 'open-iconic', 'themify-icons']
     )
 });
 
@@ -52,6 +52,15 @@ gulp.task('font-awesome', function () {
         .pipe(gulp.dest(path.join(relFontPath, 'font-awesome')));
 });
 
+gulp.task('material-design', function () {
+    gulp.src(path.join(bowerDir, 'material-design-icons/iconfont', '/**/*.{css,eot,svg,ttf,woff,woff2}'))
+        .pipe(gulp.dest(path.join(relFontPath, 'material-design')));
+    gulp.src(path.join(bowerDir, 'material-design/material-icons.css'))
+        .pipe(concat("material-icons.min.css"))
+        .pipe(cleanCSS({keepSpecialComments: 0}))
+        .pipe(gulp.dest(path.join(relFontPath, 'material-design')));
+});
+
 /**
  * Foundation Icons
  */
@@ -60,7 +69,7 @@ gulp.task('foundation', function () {
         .pipe(gulp.dest(path.join(relFontPath, 'foundation-icons')));
     gulp.src(path.join(bowerDir, 'foundation-icon-fonts/foundation-icons.css'))
         .pipe(concat("foundation-icons.min.css"))
-        .pipe(cleanCSS({keepSpecialComments:0}))
+        .pipe(cleanCSS({keepSpecialComments: 0}))
         .pipe(gulp.dest(path.join(relFontPath, 'foundation-icons')));
 });
 
@@ -101,6 +110,6 @@ gulp.task('themify-icons', function () {
         .pipe(gulp.dest(path.join(relFontPath, 'themify-icons')));
     gulp.src(path.join(bowerDir, 'themify-icons/css/themify-icons.css'))
         .pipe(concat("themify-icons.min.css"))
-        .pipe(cleanCSS({keepSpecialComments:0}))
+        .pipe(cleanCSS({keepSpecialComments: 0}))
         .pipe(gulp.dest(path.join(relFontPath, 'themify-icons/css')));
 });
