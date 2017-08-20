@@ -20,12 +20,4 @@
             </admin>
         </resources>
     </acl>
-
-    <menu>
-        <fontawesomeness>
-            <title>Font Awesome</title>
-            <sort_order>10</sort_order>
-            <action>adminhtml/frosit_fontawesomeness</action>
-        </fontawesomeness>
-    </menu>
 </config>
